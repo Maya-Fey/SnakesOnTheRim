@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="Human">
+		<defName>SymbioteRace</defName>
+		<label>Symbiote</label>
+		<description>TBD</description>
+		<race>
+			<baseHungerRate>0</baseHungerRate>
+		</race>
+		
+		<comps>
+			<li Class="Symbiotes.CompProperties_Symbiote">
+				<compClass>Symbiotes.SymbioteComponent</compClass>
+			</li>
+		</comps>
+		
+	</ThingDef>
+	
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>SymbiotePawnKind</defName>
+		<label>symbiote</label>
+		
+		<race>SymbioteRace</race>
+		
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
+</Defs>

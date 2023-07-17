@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<!--
+		<success>Always</success>
+		-->
+		<operations>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="BasePawn"]/inspectorTabs</xpath>
+				<value>
+					<li>Symbiotes.ITab_Symbiote_Socials</li>
+					<li>Symbiotes.ITab_Symbiote_Bio</li>
+					<li>Symbiotes.ITab_Symbiote_Needs</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/ThingDef[defName="Human"]</xpath>
+				<attribute>Name</attribute>
+				<value>Human</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

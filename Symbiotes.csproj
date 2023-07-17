@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Configurations>1.3;1.3_DEBUG;1.4;1.4_DEBUG</Configurations>
+		<ModSharedProps>$(SolutionDir)Shared.mod.props.csproj</ModSharedProps>
+	</PropertyGroup>
+
+	<Import Project="$(ModSharedProps)" />
+	
+	<ItemGroup>
+		<PackageReference Include="Lib.Harmony" Version="2.2.2" ExcludeAssets="runtime" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="HarmonyLib" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Assets\Textures\Things\Pawn\Symbiote\" />
+	  <Folder Include="Patches\" />
+	</ItemGroup>
+
+</Project>
